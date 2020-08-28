@@ -18,7 +18,7 @@ const Footer = (props) =>{
                     {/* <p className='animate__animated animate__flash animate__repeat-1	1animate__slower	3s'>à partir de {props.version.legende.initialPrice} €</p> */}
                 </div>
 
-                <NextButton   version={props.version} 
+                <NextButton version={props.version} 
                 step={props.step} 
                 nextPath={props.nextPath}
                 nextPageName={props.nextPageName}/>

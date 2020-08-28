@@ -446,29 +446,29 @@ const initialState = {
 
 function rootReducer(state = initialState, action) {
 
-  // if (action.type === "UPDATE_PRICE"){
+   if (action.type === "UPDATE_PRICE"){
 
-  //   if (action.price === 58500){
+    if (action.price === 58500){
      
-  //     return {...state,
-  //       version: {...state.version,
-  //         legend: {...state.version.legend,
-  //           initialPrice: 58500
-  //         } 
-  //       }
-  //      }
-  //   }
-  //   if (action.price === 54700){
+       return {...state,
+      version: {...state.version,
+           legend: {...state.version.legend,
+             initialPrice: 58500
+          } 
+         }
+       }
+     }
+    if (action.price === 54700){
       
-  //     return {...state,
-  //       version: {...state.version,
-  //         legend: {...state.version.legend,
-  //           initialPrice: 54700
-  //         } 
-  //       }
-  //      }
-  //   }
-  // }
+       return {...state,
+         version: {...state.version,
+           legend: {...state.version.legend,
+            initialPrice: 54700
+           } 
+       }
+        }
+    }
+  }
   if (action.type === "PICK_VERSION"){
 
     if (action.version === "Legende"){
